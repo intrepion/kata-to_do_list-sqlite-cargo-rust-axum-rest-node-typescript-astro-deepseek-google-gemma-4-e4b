@@ -1,0 +1,11 @@
+[package]
+name = "kata-to_do_list"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+axum = "0.7"
+sqlx = { version = "0.7", features = ["runtime-tokio-native-tls", "sqlite"] }
+uuid = { version = "1.0", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
